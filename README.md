@@ -1,72 +1,76 @@
 # VLSI & Digital Physical Design Portfolio 🚀
 
-Welcome to my hardware design portfolio. This repository showcases my journey from **RTL Design** to **Functional Verification** and the **ASIC Physical Design Flow**. 
+Welcome to my hardware design portfolio. Hi! I am an Electronics and Communication Engineering student passionate about the semiconductor industry. This repository documents my hands-on projects, moving from Digital Logic Design to the ASIC Physical Design (PD) Flow.
 
-As an Electronics and Communication Engineering student/aspirant, I focus on building efficient digital systems using industry-standard open-source EDA tools.
+My goal is to learn how modern chips are designed, verified, and prepared for manufacturing using open-source EDA tools.
 
----
+📂 Featured Projects
+1️⃣ 4-Bit Arithmetic Logic Unit (ALU) ✅
+Focus: Combinational Logic & RTL Coding
 
-## 📂 Projects Overview
+I designed a 4-bit ALU that handles 8 core operations. This project helped me understand the mathematical "heart" of a processor.
 
-### 1️⃣ 4-Bit Arithmetic Logic Unit (ALU) ✅
-**Status:** Completed | **Core Skill:** Combinational Logic & RTL Coding
+What I did: Implemented ADD, SUB, AND, OR, XOR, NOT, SLT, and MUL in Verilog.
 
-Designed a 4-bit ALU supporting 8 distinct arithmetic and logical operations. This project serves as the computational heart of a processor.
+Verification: Created a Testbench to simulate all opcodes and verified the results.
 
-- **Operations:** ADD, SUB, AND, OR, XOR, NOT, SLT, MUL.
-- **Tools:** Icarus Verilog (Simulation), GTKWave (Waveform Analysis).
-- **Key Outcome:** Verified 100% logic accuracy across all opcodes via a custom testbench.
+Tools: Icarus Verilog, GTKWave.
 
-> [View ALU Source Code](./alu.v) | [View Waveform](./alu_waveform.png)
+Learning: Mastered how to translate a truth table into functional hardware code.
 
----
+View ALU Code | View My Waveform
 
-### 2️⃣ UART Transmitter Design ✅
-**Status:** Completed | **Core Skill:** Sequential Logic & Finite State Machines (FSM)
+2️⃣ UART Transmitter Design 📡
+Focus: Sequential Logic & Finite State Machines (FSM)
 
-Implemented the Universal Asynchronous Receiver-Transmitter (UART) protocol to convert 8-bit parallel data into a serial bitstream for communication.
+I built a UART Transmitter to learn how chips communicate serialized data.
 
-- **Protocol:** 8N1 (1 Start bit, 8 Data bits, 1 Stop bit).
-- **Design:** 4-State FSM (IDLE, START, DATA, STOP).
-- **Tools:** Verilog HDL, iVerilog, GTKWave.
-- **Key Outcome:** Successfully serialized Hex data (0x41) with precise timing alignment.
+What I did: Designed a 4-state FSM (IDLE, START, DATA, STOP) to send 8-bit data over a single wire.
 
-> [View UART Source Code](./uart_tx.v) | [View Waveform](./uart_waveform.png)
+The Frame: Ensured correct timing for Start and Stop bits to maintain data integrity.
 
----
+Learning: Gained experience with Clock-driven logic and bit-level synchronization.
 
-### 3️⃣ ASIC Physical Design Flow (OpenLane) 🏗️
-**Status:** Documentation & Flow Study | **Core Skill:** RTL-to-GDSII Implementation
+Tools: Verilog, iVerilog, GTKWave.
 
-Explored the automated ASIC design flow using the **OpenLane** platform and **Sky130 PDK** (130nm process). This project focuses on the physical implementation of digital logic onto silicon.
+View UART Code | View My Waveform
 
-- **The Flow Stages:**
-  1. **Synthesis:** Converting RTL to a gate-level netlist (Yosys).
-  2. **Floorplanning:** Defining die area and I/O pin placement.
-  3. **Placement:** Global and detailed placement of standard cells.
-  4. **CTS:** Clock Tree Synthesis to minimize clock skew.
-  5. **Routing:** Global and detailed routing of metal interconnects.
-- **Tools:** OpenROAD, Magic VLSI, Netgen.
+3️⃣ ASIC Physical Design Flow (OpenLane) 🏗️
+Focus: RTL-to-GDSII Implementation
 
----
+This is where I explore how my Verilog code becomes a physical silicon layout. I am studying the OpenLane automated flow using the Sky130 PDK.
 
-## 🛠️ Technical Stack
-- **Languages:** Verilog HDL
-- **Simulators:** Icarus Verilog (iVerilog)
-- **Analysis:** GTKWave
-- **ASIC Flow:** OpenLane / Sky130 PDK
-- **Platform:** Windows (VS Code) / Linux (Ubuntu for OpenLane)
+Stages I am exploring:
 
----
+Synthesis: Converting my Verilog into a gate-level netlist.
 
-## 📈 Future Goals
-- Implement a **UART Receiver** to complete the full Duplex communication.
-- Perform **Static Timing Analysis (STA)** on the ALU design.
-- Explore **FPGA Prototyping** using Xilinx Vivado.
+Floorplanning: Setting the chip boundary and placing I/O pins.
 
----
+Placement: Organizing gates to save area and power.
 
-## ✉️ Connect with Me
-If you are interested in VLSI design or have any suggestions, feel free to reach out!
-- **LinkedIn:** [Insert Your LinkedIn Profile Link Here]
-- **Email:** [Insert Your Email Here]
+CTS (Clock Tree Synthesis): Building the clock network to avoid timing errors.
+
+Routing: Drawing the physical metal wires to connect the entire design.
+
+🛠️ My Technical Toolkit
+Languages: Verilog HDL
+
+Simulators: Icarus Verilog
+
+Waveform Viewer: GTKWave
+
+PD Platform: OpenLane / Sky130 PDK
+
+Tools: VS Code (Windows) & Linux (Ubuntu)
+
+🌟 Why I am doing this?
+I want to contribute to the future of the Semiconductor Industry. By building these projects, I am developing the "Front-end" (RTL) and "Back-end" (Physical Design) skills required for a professional VLSI Engineer.
+
+📫 Let's Connect!
+I am always looking for internships and learning opportunities:
+
+LinkedIn: www.linkedin.com/in/punith-sai-354745360
+
+Email: punithsai50@gmail.com
+
+Built with ❤️ by a future VLSI Engineer
